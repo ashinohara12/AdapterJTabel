@@ -16,7 +16,7 @@ import model.Student;
 // (after adding implements TableModel to the class heading).
 //
 // Note: Some TableModel methods need not be implemented.
-public class StudentCollection  {
+public class StudentCollection implememnts TableModel{
 
   private List<Student> theStudents;
 

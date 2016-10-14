@@ -43,13 +43,15 @@ public class StudentGUI extends JFrame {
     setLocation(30, 30);
 
     // TODO: 2) Need a new StudentCollection as our model
+    StudentCollection studentCollection = new StudentCollection();
  
     // TODO: 3) Construct the JTable (table) with our model as an argument (could use setModel)
- 
+  JTable StudentTable = new StudentTable(studentCollection);
     // TODO: 4) Construct a JScrollPane to decorate table so that if the data exceeds the 
     // side of the table in the  GUI, then it automatically becomes scrollable.
-    
+  JScrollPane scroll = new JScrollPane();
     // TODO: 5) Add JScrollPane to this JFrame
+   this.add(scroll);
    
     
     // TODO: Run this code to see if the JTable appears (no code to write)
